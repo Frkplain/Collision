@@ -1,0 +1,14 @@
+public static bool gameOver;
+    public GameObject gameOverPanel;
+    void Start()
+    {
+        gameOver = false;
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Obstacle")
+        {
+            print("ENTERRR");
+        }
+    }
